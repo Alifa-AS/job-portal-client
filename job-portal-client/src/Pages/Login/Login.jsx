@@ -3,6 +3,7 @@ import signInLottieData from '../../assets/Lottie/signin.json'
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../../Context/AuthContext/AuthContext";
+import SocialLogin from "../shared/SocialLogin";
 
 const Login = () => {
     const { signInUser } = useContext(AuthContext);
@@ -68,6 +69,7 @@ const Login = () => {
               <p>Don't have any account? <Link to="/register" 
               className="text-red-600 underline font-bold"> Register </Link>Now!</p>
             </form>
+            <SocialLogin />
           </div>
         </div>
       </div>

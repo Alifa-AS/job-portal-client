@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import registerLottieData from '../../assets/Lottie/register.json'
 import { useContext, useState } from "react";
 import AuthContext from "../../Context/AuthContext/AuthContext";
+import SocialLogin from "../shared/SocialLogin";
 
 
 const Register = () => {
@@ -91,6 +92,7 @@ const Register = () => {
                 </p>
               </div>
             </form>
+              <SocialLogin />    
           </div>
         </div>
       </div>
